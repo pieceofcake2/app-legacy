@@ -1,9 +1,11 @@
 # Application Skeleton Documentation
 
-pieceofcake2/app is the application skeleton for CakePHP 2 applications running on
+pieceofcake2/app-legacy is the application skeleton for CakePHP 2 applications running on
 [pieceofcake2/cakephp](https://github.com/pieceofcake2/cakephp). It uses a directory layout
 compatible with CakePHP 5 (`config/`, `src/`, `templates/`, `tests/`, `webroot/`) and
-loads CakePHP and all dependencies with Composer.
+loads CakePHP and all dependencies with Composer. Its application classes are global and its
+templates are `.ctp` files; for namespaced classes (`App\`) and `.php` templates, use
+[pieceofcake2/app](https://github.com/pieceofcake2/app).
 
 > [!WARNING]
 > CakePHP 2.x is for the maintenance of existing applications. For new projects, use
@@ -36,7 +38,7 @@ for details.
 Create a new application with Composer's `create-project` command:
 
 ```bash
-composer create-project pieceofcake2/app my_app
+composer create-project pieceofcake2/app-legacy my_app
 ```
 
 This creates the `my_app` directory and installs CakePHP (`pieceofcake2/cakephp`) into
@@ -633,4 +635,4 @@ This package is based on the `app/` directory of
 version 2.10.24), originally by the CakePHP community (Cake Software Foundation, Inc.). It was
 extracted into a separate package and is maintained for CakePHP 2 on modern PHP by
 [pieceofcake2](https://github.com/pieceofcake2). Changes from the original are listed in the
-[commit history](https://github.com/pieceofcake2/app/commits/2.x).
+[commit history](https://github.com/pieceofcake2/app-legacy/commits/2.x).

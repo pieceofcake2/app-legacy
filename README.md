@@ -1,15 +1,19 @@
 # CakePHP 2.x Application Skeleton
 
-[![GitHub License](https://img.shields.io/github/license/pieceofcake2/app?label=License)](LICENSE)
-[![Packagist Version](https://img.shields.io/packagist/v/pieceofcake2/app?label=Packagist)](https://packagist.org/packages/pieceofcake2/app)
-![PHP](https://img.shields.io/packagist/dependency-v/pieceofcake2/app/php?logo=php&logoColor=%23FFFFFF&label=PHP&labelColor=%23777BB4&color=%23FFFFFF)
-![CakePHP](https://img.shields.io/packagist/dependency-v/pieceofcake2/app/pieceofcake2/cakephp?logo=cakephp&logoColor=%23FFFFFF&label=CakePHP&labelColor=%23D33C43&color=%23FFFFFF)
-[![PHPStan](https://img.shields.io/badge/PHPStan-level%205-brightgreen?label=PHPStan)](https://github.com/pieceofcake2/app/actions/workflows/CI.yml)
+[![GitHub License](https://img.shields.io/github/license/pieceofcake2/app-legacy?label=License)](LICENSE)
+[![Packagist Version](https://img.shields.io/packagist/v/pieceofcake2/app-legacy?label=Packagist)](https://packagist.org/packages/pieceofcake2/app-legacy)
+![PHP](https://img.shields.io/packagist/dependency-v/pieceofcake2/app-legacy/php?logo=php&logoColor=%23FFFFFF&label=PHP&labelColor=%23777BB4&color=%23FFFFFF)
+![CakePHP](https://img.shields.io/packagist/dependency-v/pieceofcake2/app-legacy/pieceofcake2/cakephp?logo=cakephp&logoColor=%23FFFFFF&label=CakePHP&labelColor=%23D33C43&color=%23FFFFFF)
+[![PHPStan](https://img.shields.io/badge/PHPStan-level%205-brightgreen?label=PHPStan)](https://github.com/pieceofcake2/app-legacy/actions/workflows/CI.yml)
 
 The application skeleton for CakePHP 2 applications running on
 [pieceofcake2/cakephp](https://github.com/pieceofcake2/cakephp), with a directory layout
 compatible with CakePHP 5 (`config/`, `src/`, `templates/`, `tests/`, `webroot/`), `.env`
 support, and the home page, layouts, error pages and styles of the CakePHP 5 skeleton.
+
+This skeleton keeps the application classes global and the templates as `.ctp` files. For an
+application with namespaced classes (`App\`) and `.php` templates, use
+[pieceofcake2/app](https://github.com/pieceofcake2/app).
 
 > [!WARNING]
 > CakePHP 2.x is for the maintenance of existing applications. For new projects, use
@@ -34,7 +38,7 @@ For AI coding tools, the Markdown docs of the CakePHP 2 book are installed as a 
 ## Installation
 
 ```bash
-composer create-project pieceofcake2/app my_app
+composer create-project pieceofcake2/app-legacy my_app
 ```
 
 Then copy `config/database.php.default` to `config/database.php`, set the database with
@@ -58,7 +62,7 @@ This package is based on the `app/` directory of
 version 2.10.24), originally by the CakePHP community (Cake Software Foundation, Inc.). It was
 extracted into a separate package and is maintained for CakePHP 2 on modern PHP by
 [pieceofcake2](https://github.com/pieceofcake2). Changes from the original are listed in the
-[commit history](https://github.com/pieceofcake2/app/commits/2.x).
+[commit history](https://github.com/pieceofcake2/app-legacy/commits/2.x).
 
 ## License
 
