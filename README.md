@@ -21,7 +21,7 @@ application with namespaced classes (`App\`) and `.php` templates, use
 
 ## Documentation
 
-The documentation is the [Application Skeleton with Global Classes](https://pieceofcake2.github.io/docs/installation/application-skeleton-legacy.html)
+The documentation is the [Legacy Application Skeleton](https://pieceofcake2.github.io/docs/installation/application-skeleton-legacy.html)
 page of the CakePHP 2 book (日本語: https://pieceofcake2.github.io/docs/ja/installation/application-skeleton-legacy.html;
 Markdown: [en](https://github.com/pieceofcake2/docs/blob/2.x/docs/en/installation/application-skeleton-legacy.md),
 [ja](https://github.com/pieceofcake2/docs/blob/2.x/docs/ja/installation/application-skeleton-legacy.md)).
