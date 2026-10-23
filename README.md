@@ -21,11 +21,14 @@ application with namespaced classes (`App\`) and `.php` templates, use
 
 ## Documentation
 
-- Website: https://pieceofcake2.github.io/app-legacy/ (日本語: https://pieceofcake2.github.io/app-legacy/ja/)
-- Markdown: [docs/README.md](docs/README.md) (日本語: [docs/ja/README.md](docs/ja/README.md)) (for AI tools and offline reading)
-
-It covers the installation, the directory layout, the configuration and `.env` files,
-the pages and styles, running tests and PHPStan, and migrating an existing application to the modern layout.
+The documentation is the [Application Skeleton with Global Classes](https://pieceofcake2.github.io/docs/installation/application-skeleton-legacy.html)
+page of the CakePHP 2 book (日本語: https://pieceofcake2.github.io/docs/ja/installation/application-skeleton-legacy.html;
+Markdown: [en](https://github.com/pieceofcake2/docs/blob/2.x/docs/en/installation/application-skeleton-legacy.md),
+[ja](https://github.com/pieceofcake2/docs/blob/2.x/docs/ja/installation/application-skeleton-legacy.md)).
+It covers what differs from pieceofcake2/app and links the shared sections: the installation,
+the configuration and `.env` files, the pages and styles, and running tests and PHPStan. To move
+an existing application to the modern layout, see
+[Migrating to the Modern Layout](https://pieceofcake2.github.io/docs/appendices/migrating-to-the-modern-layout.html).
 
 For AI coding tools, the Markdown docs of the CakePHP 2 book are installed as a dev dependency (`pieceofcake2/docs`, files in `vendor/pieceofcake2/docs/docs/en/`).
 
@@ -45,7 +48,7 @@ Then copy `config/database.php.default` to `config/database.php`, set the databa
 `DATABASE_URL` in `config/.env.local` (and the test database in `config/.env.test.local`) or
 the environment, and
 change the security salts in `config/core.php` (see
-[Generating the Security Salts](https://pieceofcake2.github.io/app-legacy/#generating-the-security-salts)).
+[Generating the Security Salts](https://pieceofcake2.github.io/docs/installation/application-skeleton.html#generating-the-security-salts)).
 
 The Bake and DebugKit plugins are development dependencies. `config/bootstrap.php` loads
 them when they are installed, so `bin/cake bake` works out of the box and
