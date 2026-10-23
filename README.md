@@ -21,7 +21,7 @@ application with namespaced classes (`App\`) and `.php` templates, use
 
 ## Documentation
 
-- Website: https://pieceofcake2.github.io/app/ (日本語: https://pieceofcake2.github.io/app/ja/)
+- Website: https://pieceofcake2.github.io/app-legacy/ (日本語: https://pieceofcake2.github.io/app-legacy/ja/)
 - Markdown: [docs/README.md](docs/README.md) (日本語: [docs/ja/README.md](docs/ja/README.md)) (for AI tools and offline reading)
 
 It covers the installation, the directory layout, the configuration and `.env` files,
@@ -45,7 +45,7 @@ Then copy `config/database.php.default` to `config/database.php`, set the databa
 `DATABASE_URL` in `config/.env.local` (and the test database in `config/.env.test.local`) or
 the environment, and
 change the security salts in `config/core.php` (see
-[Generating the Security Salts](https://pieceofcake2.github.io/app/#generating-the-security-salts)).
+[Generating the Security Salts](https://pieceofcake2.github.io/app-legacy/#generating-the-security-salts)).
 
 The Bake and DebugKit plugins are development dependencies. `config/bootstrap.php` loads
 them when they are installed, so `bin/cake bake` works out of the box and
