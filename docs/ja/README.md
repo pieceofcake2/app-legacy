@@ -1,9 +1,10 @@
 # アプリケーションスケルトンのドキュメント
 
-pieceofcake2/app は、[pieceofcake2/cakephp](https://github.com/pieceofcake2/cakephp) で動作する
+pieceofcake2/app-legacy は、[pieceofcake2/cakephp](https://github.com/pieceofcake2/cakephp) で動作する
 CakePHP 2 アプリケーションのためのアプリケーションスケルトンです。CakePHP 5 と互換性のあるディレクトリ構成
 (`config/`、`src/`、`templates/`、`tests/`、`webroot/`) を使い、CakePHP とすべての依存パッケージを
-Composer で読み込みます。
+Composer で読み込みます。アプリケーションのクラスはグローバルで、テンプレートは `.ctp` ファイルです。
+名前空間付きのクラス (`App\`) と `.php` のテンプレートを使う場合は、[pieceofcake2/app](https://github.com/pieceofcake2/app) を使います。
 
 > [!WARNING]
 > CakePHP 2.x は既存アプリケーションのメンテナンスのためのものです。新しいプロジェクトには、
@@ -40,7 +41,7 @@ Composer で読み込みます。
 Composer の `create-project` コマンドで新しいアプリケーションを作成します。
 
 ```bash
-composer create-project pieceofcake2/app my_app
+composer create-project pieceofcake2/app-legacy my_app
 ```
 
 これにより `my_app` ディレクトリが作成され、CakePHP (`pieceofcake2/cakephp`) が `vendor/` に
@@ -657,5 +658,5 @@ vendor/bin/phpstan analyse
 元の作者は CakePHP コミュニティ (Cake Software Foundation, Inc.) です。
 [pieceofcake2](https://github.com/pieceofcake2) が、モダンな PHP で動く CakePHP 2 向けに
 メンテナンスしています。オリジナルからの変更点は
-[コミット履歴](https://github.com/pieceofcake2/app/commits/2.x)
+[コミット履歴](https://github.com/pieceofcake2/app-legacy/commits/2.x)
 で確認できます。

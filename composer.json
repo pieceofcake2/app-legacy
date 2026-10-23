@@ -1,5 +1,5 @@
 {
-    "name": "pieceofcake2/app",
+    "name": "pieceofcake2/app-legacy",
     "description": "CakePHP 2 application skeleton with a CakePHP 5-style directory layout",
     "type": "project",
     "keywords": ["cakephp", "skeleton"],
